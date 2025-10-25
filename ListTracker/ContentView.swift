@@ -13,6 +13,8 @@ struct ContentView: View {
     @Query private var lists: [ListModel]
     
     @State private var isAlertShowing: Bool = false
+  
+    
     @State private var title: String = ""
     
     var body: some View {
