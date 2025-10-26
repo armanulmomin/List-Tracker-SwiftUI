@@ -45,6 +45,10 @@ struct ContentView: View {
             .alert("Create a new List", isPresented: $isAlertShowing){
                 TextField("Enter Item", text: $title)
                 Button{
+                    guard !title.isEmpty else {
+                        return
+                    }
+                    
                     modelContext.insert(ListModel(title: title))
                     title = ""
                 } label: {
