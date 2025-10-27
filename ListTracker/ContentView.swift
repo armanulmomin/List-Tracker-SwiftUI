@@ -42,7 +42,7 @@ struct ContentView: View {
                 }
                 
             }
-            .alert("Create a new List", isPresented: $isAlertShowing){
+            .alert("Create a new Item", isPresented: $isAlertShowing){
                 TextField("Enter Item", text: $title)
                 Button{
                     guard !title.isEmpty else {
