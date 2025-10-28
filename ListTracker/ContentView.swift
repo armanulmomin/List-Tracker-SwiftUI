@@ -57,7 +57,7 @@ struct ContentView: View {
             }
             .overlay {
                 if lists.isEmpty {
-                    ContentUnavailableView("My Listing", systemImage: "heart.circle", description: Text("No Listing Added Yet"))
+                    ContentUnavailableView("Add to the Listing", systemImage: "heart.circle", description: Text("No Listing Added Yet"))
                 }
             }
         }
